@@ -16,7 +16,7 @@ upper_case_list = [char.upper() for char in greeting]
 print(upper_case_list)
 
 #з диапозону від 0-50 записати тільки не парні числа при цьому піднести їх до квадрату
-odd_squares = [x**2 for x in range(0, 51) if x == 0 or x % 2]
+odd_squares = [x**2 for x in range(0, 50) if x == 0 or x % 2]
 print(odd_squares)
 
 #Функція, яка виводить ліст
@@ -57,8 +57,8 @@ result = sum_of_list([3, 7, 1, 9, 2])
 #Функція, яка приймає ліст чисел та повертає середнє арифметичне його значень
 def average_of_list(lst):
     return sum(lst) / len(lst)
-lst = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
 
+lst = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
 # Мінімальне число
 min_value = min(lst)
 print("Мінімальне число:", min_value)
