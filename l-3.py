@@ -83,10 +83,9 @@ prince = Prince("Олександр", 25, 37)
 prince.find_cinderella([cinderella1, cinderella2, cinderella3])
 Cinderella.get_count()
 
-
+#3
 from abc import ABC, abstractmethod
 
-#3
 class Printable(ABC):
     @abstractmethod
     def print(self):
