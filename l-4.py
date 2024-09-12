@@ -15,7 +15,7 @@ import json
 FILE_PATH = 'purchases.json'
 
 #2
-# Завантаження покупки з файлу
+
 def load_purchases():
     try:
         with open(FILE_PATH, 'r') as file:
