@@ -83,15 +83,15 @@ def delete_purchase():
 
 #Зміна ціни
 def update_purchase_price():
-    purchases = load_purchases()  # Завантажуємо список покупок
+    purchases = load_purchases()
     id_ = input("Введіть ID покупки, яку хочете оновити: ")
 
     for purchase in purchases:
         if purchase["id"] == id_:
             print(f"Поточна ціна покупки: {purchase['price']}")
             new_price = float(input("Введіть нову ціну: "))
-            purchase["price"] = new_price  # Оновлюємо ціну
-            save_purchases(purchases)  # Зберігаємо зміни у файл
+            purchase["price"] = new_price
+            save_purchases(purchases)
             print("Ціна покупки успішно оновлена!")
             return
 
