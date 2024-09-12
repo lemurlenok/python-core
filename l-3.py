@@ -49,11 +49,11 @@ class Human:
 
 
 class Cinderella(Human):
-    count = 0
+    __count = 0
     def __init__(self, name, age, foot_size):
         super().__init__(name, age)
         self.foot_size = foot_size
-        Cinderella.count += 1
+        Cinderella.__count += 1
 
     @classmethod
     def get_count(cls):

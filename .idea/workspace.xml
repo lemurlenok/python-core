@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2619a1c2-ec7c-4cc8-b721-0b4eb569b2be" name="Changes" comment="add l-2.1">
-      <change afterPath="$PROJECT_DIR$/l-3.py" afterDir="false" />
+    <list default="true" id="2619a1c2-ec7c-4cc8-b721-0b4eb569b2be" name="Changes" comment="add l-3.1">
+      <change afterPath="$PROJECT_DIR$/emails.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filtered_emails.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l-4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/l-3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +113,10 @@
       <workItem from="1725386492574" duration="1637000" />
       <workItem from="1725537281629" duration="5887000" />
       <workItem from="1725793436775" duration="1297000" />
-      <workItem from="1725949235861" duration="1312000" />
+      <workItem from="1725949235861" duration="1627000" />
+      <workItem from="1725987749812" duration="2000" />
+      <workItem from="1725991571213" duration="821000" />
+      <workItem from="1726148682176" duration="1468000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <option name="closed" value="true" />
@@ -136,17 +142,46 @@
       <option name="project" value="LOCAL" />
       <updated>1725794733983</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add l-3">
+      <option name="closed" value="true" />
+      <created>1725987415075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725987415075</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add l-3.1">
+      <option name="closed" value="true" />
+      <created>1725987679477</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725987679477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
     <MESSAGE value="add l-2" />
     <MESSAGE value="add l-2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add l-2.1" />
+    <MESSAGE value="add l-3" />
+    <MESSAGE value="add l-3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add l-3.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
