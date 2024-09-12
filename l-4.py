@@ -81,11 +81,11 @@ def delete_purchase():
         save_purchases(updated_purchases)
         print("Покупку успішно видалено!")
 
+#Зміна ціни
 def update_purchase_price():
     purchases = load_purchases()  # Завантажуємо список покупок
     id_ = input("Введіть ID покупки, яку хочете оновити: ")
 
-    # Пошук за ID
     for purchase in purchases:
         if purchase["id"] == id_:
             print(f"Поточна ціна покупки: {purchase['price']}")
