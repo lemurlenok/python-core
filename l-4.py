@@ -1,3 +1,4 @@
+#1
 with open('emails.txt', 'r') as file:
     emails = file.readlines()
 
@@ -13,6 +14,7 @@ import json
 
 FILE_PATH = 'purchases.json'
 
+#2
 # Завантаження покупки з файлу
 def load_purchases():
     try:
@@ -21,7 +23,7 @@ def load_purchases():
     except FileNotFoundError:
         return []
 
-# Зберігання покупки у файл
+
 def save_purchases(purchases):
     with open(FILE_PATH, 'w') as file:
         json.dump(purchases, file, indent=4)
@@ -36,7 +38,7 @@ def add_purchase():
     save_purchases(purchases)
     print("Покупку успішно додано!")
 
-# Вивід всих покупок
+# Список покупок
 def show_all_purchases():
     purchases = load_purchases()
     if not purchases:
@@ -58,7 +60,7 @@ def search_purchase():
 
     print("Покупка не знайдена.")
 
-# Вивід найдорожчої покупки
+# Найдорожча покупка
 def show_most_expensive():
     purchases = load_purchases()
     if not purchases:
@@ -67,7 +69,7 @@ def show_most_expensive():
         most_expensive = max(purchases, key=lambda x: x['price'])
         print(f"Найдорожча покупка: ID: {most_expensive['id']}, Назва: {most_expensive['name']}, Ціна: {most_expensive['price']}")
 
-# Видалення покупки за ID
+# Видалення за ID
 def delete_purchase():
     purchases = load_purchases()
     id_ = input("Введіть ID покупки для видалення: ")
@@ -79,7 +81,23 @@ def delete_purchase():
         save_purchases(updated_purchases)
         print("Покупку успішно видалено!")
 
-# Меню
+def update_purchase_price():
+    purchases = load_purchases()  # Завантажуємо список покупок
+    id_ = input("Введіть ID покупки, яку хочете оновити: ")
+
+    # Пошук за ID
+    for purchase in purchases:
+        if purchase["id"] == id_:
+            print(f"Поточна ціна покупки: {purchase['price']}")
+            new_price = float(input("Введіть нову ціну: "))
+            purchase["price"] = new_price  # Оновлюємо ціну
+            save_purchases(purchases)  # Зберігаємо зміни у файл
+            print("Ціна покупки успішно оновлена!")
+            return
+
+    print("Покупка з таким ID не знайдена.")
+
+
 def menu():
     while True:
         print("\nМеню:")
@@ -88,7 +106,8 @@ def menu():
         print("3. Шукати покупку")
         print("4. Показати найдорожчу покупку")
         print("5. Видалити покупку")
-        print("6. Вийти")
+        print("6. Оновити ціну покупки")
+        print("7. Вийти")
 
         choice = input("Виберіть опцію: ")
 
@@ -103,6 +122,8 @@ def menu():
         elif choice == '5':
             delete_purchase()
         elif choice == '6':
+            update_purchase_price()
+        elif choice == '7':
             print("Вихід з програми.")
             break
         else:
@@ -111,3 +132,5 @@ def menu():
 
 if __name__ == '__main__':
     menu()
+
+
