@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2619a1c2-ec7c-4cc8-b721-0b4eb569b2be" name="Changes" comment="add l-4">
-      <change afterPath="$PROJECT_DIR$/l-4.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l-4.py" beforeDir="false" afterPath="$PROJECT_DIR$/l-4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/purchases.json" beforeDir="false" afterPath="$PROJECT_DIR$/purchases.json" afterDir="false" />
-    </list>
+    <list default="true" id="2619a1c2-ec7c-4cc8-b721-0b4eb569b2be" name="Changes" comment="add l-4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +111,7 @@
       <workItem from="1725987749812" duration="2000" />
       <workItem from="1725991571213" duration="821000" />
       <workItem from="1726148682176" duration="1648000" />
-      <workItem from="1726150471103" duration="1188000" />
+      <workItem from="1726150471103" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <option name="closed" value="true" />
@@ -166,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726150349676</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add l-4">
+      <option name="closed" value="true" />
+      <created>1726151977097</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726151977097</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
